@@ -60,16 +60,18 @@ class Container extends React.Component {
                             </div>
 
                             <div className="place">
-                                <h2>#1 Place For Your <span>Logistics</span> Sulotion</h2>
+                                <h2>#1 Place For Your <br/> <span>Logistics</span> Sulotion</h2>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi est a reprehenderit aliquid obcaecati. Earum cumque sed eligendi possimus, praesentium quasi, odit dolor vel nam, quibusdam voluptas. Sequi, nam perferendis.</p>
 
-                            </div>
-
-                          
-                            <div className="btn-button">
+                                <div className="btn-button">
                                 <button>Read More</button>
                                 <button>Free Quote</button>
                             </div>
+                            
+                            </div>
+
+                          
+                            
                         </Slide>
                     </Slider>
 
