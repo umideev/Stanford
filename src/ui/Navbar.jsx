@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { FaHeadphones } from "react-icons/fa"
-import { AiOutlineDown, AiOutlineMenu } from "react-icons/Ai";
+import { AiOutlineDown, AiOutlineMenu } from "react-icons/ai";
 import { GrClose } from "react-icons/gr"
 import "./nav.css";
 
