@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  /* overflow-x: hidden; */
+}
+
+.nav-container {
+  background-color: #FF3E41;
+  color: white;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.logo {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+}
+
+.menu {
+  flex: 6;
+}
+
+.menu ul {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  color: black;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+.menu ul li {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 20px;
+  margin: 10px 20px;
+  position: relative;
+  display: flex;
+  transition: .3s ease-in-out;
+  justify-content: center;
+}
+
+.menu ul li:hover {
+  color: #FF3E41;
+}
+
+.menu ul li::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 5px;
+  top: -31px;
+  background-color: #fff;
+  transition: .3s ease-in-out;
+}
+
+.menu ul li:hover::after {
+  width: 100%;
+}
+
+
+.menu ul li .box {
+  width: 200px;
+  position: absolute;
+  margin-top: 4rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+
+.menu ul li .box ul {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.menu ul li .box ul li {
+  justify-content: start;
+  margin: 4px 0;
+  padding: 2px 5px;
+  transition: .2s ease-in-out;
+  position: relative;
+}
+
+.menu ul li .box ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  background: none;
+}
+
+.menu ul li .box ul li:hover {
+  background-color: rgb(231, 229, 229);
+  color: black;
+}
+
+.menu ul li:nth-child(4):hover .box {
+  margin-top: 0;
+  opacity: 1;
+  pointer-events: all;
+  z-index: 5;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.fa {
+  color: #FF3E41;
+}
+
+.main {
+  width: 100%;
+  height: 89vh;
+}
+
+.Carusel {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 90px;
+  bottom: 160px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  border: none;
+  transition: .4s;
+
+}
+
+.btn:hover {
+  background: rgb(246, 88, 88);
+  transition: .5s;
+}
+
+.slide {
+  width: 100%;
+  height: 89vh;
+  background: url(./ui/container/english1.jpg);
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-size: cover;
+}
+.slideInner___2mfX9 {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.slide:nth-child(2) {
+  width: 100%;
+  height: 89vh;
+  background-image: url(./ui/container/mathe.jpg);
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-size: cover;
+}
+
+.slide:last-child {
+  width: 100%;
+  height: 89vh;
+  background-image: url(./ui/container/pro.jpg);
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-size: cover;
+}
+
+.slide .name {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.slide .name h2{
+  font-weight: 400;
+}
+
+.slide .place {
+  width: 900px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 100px;
+}
+
+.slide .place h2{
+  width: 700px;
+  font-size: 70px;
+  color: #fff;
+}
+.slide .place h2 span{
+  color: #FF3E41;
+}
+
+.slide .place p{
+  width: 70%;
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+.slide:nth-child(2) .place p{
+  width: 70%;
+  font-size: 18px;
+  color: white;
+}
+
+.slide:nth-child(3) .place p{
+  width: 70%;
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+.btn-button button {
+  width: 200px;
+  height: 60px;
+  background: #FF3E41;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  margin: 50px 100px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-button button:last-child{
+  margin: 10px -50px;
+  background: white;
+  color: #000;
+}
+

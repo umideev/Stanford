@@ -1,0 +1,49 @@
+
+.mobile-menu{
+  display: none;
+}
+
+@media only screen and (max-width:900px) {
+  .mobile-menu {
+      display: flex !important;
+      justify-content: flex-end;
+      margin-right: 0px;
+      font-size: 30px;
+      background: white;
+      color: black;
+      padding:20px ;
+  }
+
+  .large-menu {
+    display: none !important;
+  }
+
+  .mobile-menu .menu-wrap{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    right: 0;
+    top: -500px;
+    transition: .2s ease-in;
+  }
+
+  .menu-wrap-opened {
+    top: 80px !important;
+  }
+
+  .menu-wrap li{
+    justify-content: start !important;
+  }
+  .menu-wrap li:hover::after {
+    width: 0 !important;
+  }
+
+
+  .button{
+    display: none !important;
+  }
+
+
+}
