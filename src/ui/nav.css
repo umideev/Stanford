@@ -77,8 +77,21 @@
     }
 
     .btn-button button {
-        width: 100% !important;
-        padding: 5px 20px;
+        width: 54% !important;
+        height: 60px;
+        background: #FF3E41;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin: 8px 0 0 36px;
+    }
+
+
+    .btn-button:nth-child(1) button {
+        width: 68% !important;
+        padding: 10px 20px;
         height: 60px;
         background: #FF3E41;
         color: #fff;
@@ -88,4 +101,109 @@
         text-transform: uppercase;
     }
 
+}
+
+
+@media only screen and (max-width:700px) {
+    .btn-button {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .btn-button button {
+        width: 49% !important;
+        padding: 10px 20px;
+        height: 60px;
+        background: #FF3E41;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin: 7px 0 4px 30px;
+    }
+
+
+    .btn-button:nth-child(2) button {
+        width: 49% !important;
+        padding: 10px 20px;
+        height: 60px;
+        background: #FF3E41;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin: 7px 0 4px 82px;
+    }
+}
+
+
+@media only screen and (max-width:450px) {
+
+    .slide {
+        position: relative;
+    }
+
+    .slideInner___2mfX9 .name h2 {
+        width: 100%;
+        position: absolute;
+        font-size: 15px;
+        top: 50px;
+        right: -20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .slideInner___2mfX9 .place h2 {
+        width: 94% !important;
+        font-size: 31px;
+        position: absolute;
+        top: 85px;
+        right: 5px;
+    }
+
+    .slideInner___2mfX9 .place p {
+        width: 94% !important;
+        position: absolute;
+        top: 157px;
+        right: 5px;
+    }
+
+    .slideInner___2mfX9 .btn-button  button{
+        width: 94% !important;
+        position: absolute;
+        top: 328px;
+        right: 5px;
+    }
+
+    .slideInner___2mfX9 .btn-button  button:last-child{
+        width: 94% !important;
+        position: absolute;
+        top: 416px;
+        right: 5px;
+    }
+
+}
+
+
+@media only screen and (max-width:350px){
+    
+    .slideInner___2mfX9 .btn-button  button{
+        width: 94% !important;
+        position: absolute;
+        top: 351px;
+        right: 5px;
+    }
+
+    .slideInner___2mfX9 .btn-button  button:last-child{
+        width: 94% !important;
+        position: absolute;
+        top: 435px;
+        right: 5px;
+    }
 }

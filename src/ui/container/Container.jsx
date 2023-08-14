@@ -15,7 +15,7 @@ class Container extends React.Component {
                     isPlaying={true}
                     infinite={true}
                     naturalSlideHeight={15}
-                    totalSlides={3}
+                    totalSlides={2}
                 >
                     <Slider className='slider'>
                         <Slide className='slide' index={0}>
@@ -53,25 +53,6 @@ class Container extends React.Component {
                                 <button>Read More</button>
                                 <button>Free Quote</button>
                             </div>
-                        </Slide>
-                        <Slide className='slide' index={2}>
-                            <div className="name">
-                                <h2>Transport & Logistics Solution</h2>
-                            </div>
-
-                            <div className="place">
-                                <h2>#1 Place For Your <br/> <span>Logistics</span> Sulotion</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi est a reprehenderit aliquid obcaecati. Earum cumque sed eligendi possimus, praesentium quasi, odit dolor vel nam, quibusdam voluptas. Sequi, nam perferendis.</p>
-
-                                <div className="btn-button">
-                                <button>Read More</button>
-                                <button>Free Quote</button>
-                            </div>
-                            
-                            </div>
-
-                          
-                            
                         </Slide>
                     </Slider>
 
